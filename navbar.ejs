@@ -1,0 +1,50 @@
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top good" style="background-color: #FFEED9 !important">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/home">
+            <i class="fa-solid fa-kitchen-set"></i>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/home/recipe">All Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/home/recipe/new/breakfast">Breakfast</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/home/recipe/new/lunch">Lunch</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/home/recipe/new/snacks">Snacks</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/home/recipe/new/dinner">Dinner</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/home/recipe/new/surpriseme">Surprise Me</a>
+              </li>
+
+              <li class="nav-item">
+                <form method="POST" action="/home/recipe/new">
+                    <button>Add new recipe</button>
+                </form>
+              </li>
+
+            </ul>
+
+            <form class="d-flex" role="search" action="">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
