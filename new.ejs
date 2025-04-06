@@ -1,0 +1,57 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
+    <h3>Add new Recipe</h3>
+    <form method="POST" action="/home/recipe">
+        <div class="mb-3">
+            <label for="title" class="form-label">Recipe name : </label>
+            <input type="text" placeholder="Add a recipe name" name="recipe[title]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="type" class="form-label">Meal :  </label>
+            <input type="text" placeholder="Meal" name="recipe[type]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="meal" class="form-label">Recipe type : </label>
+            <input type="text" placeholder="Add recipe type" name="recipe[meal]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image link : </label>
+            <input type="text" placeholder="Image url" name="recipe[image]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="keyIngredient" class="form-label">Key Ingredient : </label>
+            <input type="text" placeholder="Key Ingredient name" name="recipe[keyIngredient]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="subIngredient_1" class="form-label">Sub Ingredient_1 : </label>
+            <input type="text" placeholder="Sub Ingredient_1 name" name="recipe[subIngredient_1]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="subIngredient_2" class="form-label">Sub Ingredient_2 : </label>
+            <input type="text" placeholder="Sub Ingredient_2 name" name="recipe[subIngredient_2]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="otherIngredients" class="form-label">Other Ingredient :</label>
+            <textarea placeholder="Other Ingredient name" name="recipe[otherIngredients]" class="form-control"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="process" class="form-label">Process :</label>
+            <textarea placeholder="process" name="recipe[process]" class="form-control"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="time" class="form-label">Expected time : </label>
+            <input type="number" placeholder="0" name="recipe[time]" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="calorie" class="form-label">Calorie : </label>
+            <input type="number" placeholder="0" name="recipe[calorie]" class="form-control">
+        </div>
+        <button class="btn btn-dark add-btn mt-3 mb-3">Add</button>
+
+    </form>
+    </div>
+    </div>
+</body>

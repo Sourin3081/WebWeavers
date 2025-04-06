@@ -1,0 +1,19 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <h3>Breakfast items</h3>
+        <% for(let recipe of breakfast) { %>
+            <% if(recipe.type == "Breakfast") { %>
+                <div class="card" style="width: 18rem;">
+                    <img src="<%= recipe.image %>" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <a href="/home/recipe/<%= recipe._id %>"> <%= recipe.title %></a>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+
+   
+</body>

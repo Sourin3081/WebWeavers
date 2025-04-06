@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <h3>Open Kitchen</h3>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <h3>Breakfast items</h3>
+        <% for(let recipe of allRecipes) { %>
+            <% if(recipe.type == "Breakfast") { %>
+                <div class="card" style="width: 18rem;">
+                    <img src="<%= recipe.image %>" class="card-img-top" alt="img" style="height: 20rem;">
+                    <div class="card-body">
+                        <a href="/home/recipe/<%= recipe._id %>"> <%= recipe.title %></a>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+        <h3>Lunch items</h3>
+        <% for(let recipe of allRecipes) { %>
+            <% if(recipe.type == "Lunch") { %>
+                <div class="card" style="width: 18rem;">
+                    <img src="<%= recipe.image %>" class="card-img-top" alt="img" style="height: 20rem;">
+                    <div class="card-body">
+                        <a class="text" href="/home/recipe/<%= recipe._id %>"> <%= recipe.title %></a>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+        <h3>Snacks items</h3>
+        <% for(let recipe of allRecipes) { %>
+            <% if(recipe.type == "Snacks") { %>
+                <div class="card" style="width: 18rem;">
+                    <img src="<%= recipe.image %>" class="card-img-top" alt="img" style="height: 20rem;">
+                    <div class="card-body">
+                        <a href="/home/recipe/<%= recipe._id %>"> <%= recipe.title %></a>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+        <h3>Dinner items</h3>
+        <% for(let recipe of allRecipes) { %>
+            <% if(recipe.type == "Dinner") { %>
+                <div class="card" style="width: 18rem;">
+                    <img src="<%= recipe.image %>" class="card-img-top" alt="img" style="height: 20rem;">
+                    <div class="card-body">
+                        <a href="/home/recipe/<%= recipe._id %>"> <%= recipe.title %></a>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+   
+</body>

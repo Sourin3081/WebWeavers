@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="card col-6 offset-3 show-card">
+    <h3>Recipe Name : <%= recipe.title %> </h3>
+    <div class="card" style="width: rem;">
+        <img src="<%= recipe.image %>" class="card-img-top show-img" alt="img">
+        <div class="card-body">
+            <li>Meal : <%= recipe.type %></li>
+            <li>Type : <%= recipe.meal %></li>
+            <li>Key Ingredient : <%= recipe.keyIngredient %> </li>
+            <li>Sub Ingredient : <%= recipe.subIngredient_1 %> </li>
+            <li>Sub Ingredient : <%= recipe.subIngredient_2 %> </li>
+            <li>Other Ingridient : <%= recipe.otherIngredients %> </li>
+            <li>Process : <%= recipe.process %> </li>
+            <li>Expected time : <%= recipe.time %> </li>
+            <li>Expected calorie : <%= recipe.calorie %> </li>
+        </div>
+    </div>
+    </div>
+</body>
